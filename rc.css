@@ -1,19 +1,4 @@
-		
-.parent{
-	display: flex;
-	justify-content: space-between;
-	max-width: 100vw;
-	max-height: 100vh;
-}
-.child{
-	width: 100vw;
-	height: 100vh;
-}
-.child2{
-	background-color:darkcyan;
-	place-items: center;
-	display: grid;
-}
+
 .button{
 	background-color:darkcyan;
 	border-radius: 5px;
@@ -37,9 +22,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
-@media(max-width:576px)
-{
-	.parent{
-		display: block;
-	}
+.row{
+	font-family:verdana;
+	color: red;
 }
