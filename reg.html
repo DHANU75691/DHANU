@@ -1,52 +1,70 @@
 <html>
 <head>
-        <link rel="stylesheet" type="text/css" href=".css">
+    <link rel="stylesheet" type="text/css" href=".css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<title>REGISTRATION PAGE</title>
+    <title>REGISTRATION PAGE</title>
 </head>
 <body>
-<center>
-<h3 style="text-align:center;font-family: candara;"><u>REGISTRATION PAGE</u></h3>
-<form>
-<div><label>Name</label><input type="text" class="form-control-lg" placeholder="Enter name" size="30" name="uname"/></div>
-<div><label>Age</label><input class="form-control-lg" type="number" size="2" name="age"/></div>
-<div><label>Date</label><input class="form-control-lg" type="date" size="20" name="date of birth"/></div>
-<div><label>Mobile Number</label><input class="form-control" placeholder="Enter Mobile" type="text" size="12" name="mobile"/></div>
-<input class="form-check-input" type="radio" name="gen" value="m"/>MALE
-                       <input class="form-check-input" type="radio" name="gen" value="f"/>FEMALE</td></tr>
-<tr><td>BRANCH</td><td><input class="form-check-input" type="checkbox" name="branch" value="cse"/>CSE
-    <input type="checkbox" name="branch" value="ece"/>ECE
-    <input type="checkbox" name="branch" value="eee"/>EEE
-    <input type="checkbox" name="branch" value="civil"/>CIVIL
-    <input type="checkbox" name="branch" value="mech"/>MECH
-</td>
-<tr>
-    <td>
+    <div class="row">
+        <div class="col-lg-6">
+<div>
+        <h3 style="text-align:center;font-family: candara;"><u>REGISTRATION PAGE</u></h3><br/><br/>
+    <form>
+    <!--  Name -->
+    <div>
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control-sm" placeholder="Enter name" size="30" name="uname"/>
+    </div><br/>
+    <div>
+        <label>Age</label>
+        <input class="form-control-sm" type="number" size="2" name="age"/>
+    </div><br/>
+    <div>
+        <label>Date</label>
+        <input class="form-control-sm" type="date" size="20" name="date of birth"/>
+    </div><br/>
+    <div>
+        <label>Mobile Number</label>
+        <input class="form-control-sm" placeholder="Enter Mobile" type="text" size="12" name="mobile"/><br>
+         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    </div>
+    <input class="form-check-input" type="radio" name="gen" value="m"/>MALE
+    <input class="form-check-input" type="radio" name="gen" value="f"/>FEMALE<br>
+     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <select name="dropdown" class="form-select">
+            <option value = "CSE" selected>CSE</option>
+            <option value = "MECH">MECH</option>
+            <option value = "ECE" selected>ECE</option>
+            <option value = "CIVIL">CIVIL</option>
+    </select><br>
     <select name = "dropdown" class="form-select">
             <option value = "SKLM" selected>SKLM</option>
             <option value = "NUZVID">NUZVID</option>
             <option value = "ONGOLE" selected>ONGOLE</option>
             <option value = "RK VALLEY">RK VALLEY</option>
-         </select>
-</td>
-</tr>  
-<tr><td>E-MAIL ID</td><td><input class="form-control" placeholder="Enter Email" type="text" size="30" name="email"/></td></tr>
-<td>ADRESS</td>
-<td><textarea name="addr" cols="25" rows="5"></textarea></td></tr>
-<tr><td colspan="2" align="center"></td></tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<tr><td>PASSWORD</td><td><input class="form-control" placeholder="Enter Password" type="password" size="30" name="pass"/></td></tr>
-<tr><td>CONFIRM PASSWORD</td><td><input class="form-control" placeholder="Enter Password" type="password" size="30" name="pass"/></td></tr>
-<tr><td>UPLOAD IMAGE</td><td><input type="file" name="upload image"/></td></tr>
-<tr><td><input type="checkbox" name="REMEMBER ME" value="rm"/>REMEMBER ME</td></tr>
-<tr><td><input class="btn-success btn" type="submit" value="SUBMIT"/></td></tr>
-<tr><td><a class="btn-danger btn" href="log.html">Already a User?</a></td></tr>
-</B>
-</table>
+    </select><br>
+    <div>
+   <label>E-Mail</div> <input class="form-control-sm" placeholder="Enter Email" type="text" size="30" name="email"/><br></div>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <div><textarea name="addr" cols="25" rows="5" class="form-control-sm"></textarea><br></div>
+    <div><label>Password</label><input class="form-control" placeholder="Enter Password" type="password" size="30" name="pass"/></div><br>
+    <div><label>Confirm Password</label><input class="form-control" placeholder="Enter Password" type="password" size="30" name="pass"/></div><br>
+    <div><label>Image</label><input type="file" name="upload image"/></div><br>
+    <div><input type="checkbox" name="REMEMBER ME" value="rm"/>REMEMBER ME</div><br>
+    
+
+    <div><a class="btn-danger btn" href="log.html">Already a User?</a></div>
 </form>
-</td></tr>
-</table>
-</center>
+</div>
+<div class="col-lg-6">
+    <h3><u>Login Form</u></h3><br>
+    <div><label>Password</label><input class="form-control" placeholder="Enter Password" type="password" size="30" name="pass"/></div><br>
+    <div><label>E-Mail</label><input class="form-control" placeholder="Enter email" type="email" size="30" name="pass"/></div><br>
+    <div><input class="btn-success btn" type="submit" value="SUBMIT"/></div><br>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
 
